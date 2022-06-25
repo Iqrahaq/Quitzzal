@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/img/quetzal_transparent.png" alt="QuetzalIcon" width="200" height="auto">
+  <img src="/img/quetzal_white.png" alt="QuetzalIcon" width="200" height="auto">
 </p>
 
 <h1 align="center" style="font-weight: bold;">
