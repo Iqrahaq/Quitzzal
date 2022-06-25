@@ -72,8 +72,8 @@ See [setup guide - setup.md](setup.md) for guidance on setting this bot up for s
 **livkx** - Contributions/Bugfixes
 
 ## Credits & Acknowledgments
- **joezhuang** - Vector Designer @ Vecteezy (
-<a href="https://www.vecteezy.com/free-vector/school">School Vectors by Vecteezy</a> ).
+ **Eriek Bagus** - Vector Designer @ Vecteezy (
+<a href="https://www.vecteezy.com/free-vector/nature">Nature Vectors by Vecteezy</a> ).
 
  **dwyl** - Quotes via ( <a href="https://github.com/dwyl/quotes">Github</a> ).
  
