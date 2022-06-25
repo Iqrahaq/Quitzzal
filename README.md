@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="/img/quetzal.png" alt="QuetzalIcon" width="200" height="auto">
+  <img src="/img/quetzal_transparent.png" alt="QuetzalIcon" width="200" height="auto">
 </p>
 
 <h1 align="center" style="font-weight: bold;">
-  The QuizzQuetzal Bot
+  The QuizQuetzal Bot
 </h1>
 
 <p align="center">
