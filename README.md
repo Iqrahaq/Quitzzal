@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center" style="font-weight: bold;">
-  The Quitzzal Bot
+  The QuizzQuetzal Bot
 </h1>
 
 <p align="center">
