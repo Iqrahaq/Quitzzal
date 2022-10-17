@@ -4,9 +4,14 @@ import discord
 from discord.ext import commands
 from isbnlib import *
 from dotenv import *
+import requests
+from bs4 import BeautifulSoup
+import time
+import string
 
 
 ROLE = ""
+urls = []
 
 class Bot(commands.Cog):
     """ a class filled with all commands related to the bot. """
@@ -47,6 +52,19 @@ class Bot(commands.Cog):
     #     except asyncio.TimeoutError as e:
     #         print(e)
     #         await ctx.send("Response timed out.")
+
+    @commands.command()
+    async def post_quiz(self, ctx):
+        url = 'https://www.zimbio.com/quiz/'
+        reqs = requests.get(url)
+        soup = BeautifulSoup(reqs.text, 'html.parser')
+        
+
+        for link in soup.find_all('a'):
+            if str(link.get('href')).startswith("/quiz/"):
+                await ctx.send(link.get('href'))
+        
+        await ctx.send("Done")
         
     #######   TROUBLESHOOTING AND INFORMATION ########
 
