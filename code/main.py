@@ -6,6 +6,7 @@ import os
 import sys
 from dotenv import load_dotenv
 import traceback
+import datetime
 
 # Use dotenv to conceal token.
 load_dotenv()
@@ -14,6 +15,7 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 ROLE = ""
 MEMBERS = []
+todays_date = datetime.date.today()
 
 
 intents = discord.Intents.default()
@@ -42,12 +44,14 @@ for filename in os.listdir('./cogs'):
 
 # Set custom status for bot.
 async def custom_status():
-    await client.change_presence(activity=discord.Game(name="the next quiz..."))
+    if 9 <= todays_date.month <= 11:
+        await client.change_presence(activity=discord.Game(name="the next autumn quiz 🍂..."))
 
 @client.event
 async def on_ready():
+    await custom_status()
     print(f'{client.user} has connected to Discord!')
-    client.loop.create_task(custom_status())
+    
 
 # token
 client.run(TOKEN, reconnect=True)

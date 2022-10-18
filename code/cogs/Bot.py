@@ -54,6 +54,11 @@ class Bot(commands.Cog):
     #         await ctx.send("Response timed out.")
 
     @commands.command()
+    async def random_quiz(self, ctx):
+        print("Here's a quiz.")
+
+
+    @commands.command()
     async def post_quiz(self, ctx):
         url = 'https://www.zimbio.com/quiz/'
         reqs = requests.get(url)
@@ -65,6 +70,7 @@ class Bot(commands.Cog):
                 await ctx.send(link.get('href'))
         
         await ctx.send("Done")
+        # Remember to @ the Quiz Tag.
         
     #######   TROUBLESHOOTING AND INFORMATION ########
 
