@@ -7,11 +7,11 @@ from dotenv import *
 import requests
 from bs4 import BeautifulSoup
 import time
-import string
+import itertools
 
 
 ROLE = ""
-urls = []
+buzzfeed_urls_dict = {"URL": [], "Category": []};
 
 class Bot(commands.Cog):
     """ a class filled with all commands related to the bot. """
@@ -60,16 +60,20 @@ class Bot(commands.Cog):
 
     @commands.command()
     async def post_quiz(self, ctx):
-        url = 'https://www.zimbio.com/quiz/'
+        url = 'https://www.buzzfeed.com/uk/quizzes/'
         reqs = requests.get(url)
         soup = BeautifulSoup(reqs.text, 'html.parser')
         
 
         for link in soup.find_all('a'):
-            if str(link.get('href')).startswith("/quiz/"):
-                await ctx.send(link.get('href'))
-        
-        await ctx.send("Done")
+            if ("quiz" in str(link.get('href'))) and ("quizzes" not in str(link.get('href'))):
+                buzzfeed_urls_dict["URL"].append(str(link.get('href')))
+                await ctx.send(str(link.get('href')))
+                # for div in soup.findAll('div', {'class': 'value'}):
+                #     buzzfeed_urls_dict["Category"].append(div.find('a').attrs['class'][0].text.strip())
+                #     await ctx.send(div.find('a').attrs['class'][0].text.strip())
+                            
+
         # Remember to @ the Quiz Tag.
         
     #######   TROUBLESHOOTING AND INFORMATION ########

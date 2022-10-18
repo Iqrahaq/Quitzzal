@@ -44,8 +44,14 @@ for filename in os.listdir('./cogs'):
 
 # Set custom status for bot.
 async def custom_status():
-    if 9 <= todays_date.month <= 11:
-        await client.change_presence(activity=discord.Game(name="the next autumn quiz 🍂..."))
+    if 3 <= todays_date.month <= 5:
+        await client.change_presence(activity=discord.Game(name="🌱 Doing the next spring quiz 🌱"))
+    elif 6 <= todays_date.month <= 8:
+        await client.change_presence(activity=discord.Game(name="🌻 Doing the next summer quiz 🌻"))
+    elif 9 <= todays_date.month <= 11:
+        await client.change_presence(activity=discord.Game(name="🍂 Doing the next autumn quiz 🍂"))
+    else:
+        await client.change_presence(activity=discord.Game(name="❄️ Doing the next winter quiz ❄️"))
 
 @client.event
 async def on_ready():
