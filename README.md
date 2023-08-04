@@ -25,7 +25,7 @@
 
 ## Current Status
 
-**This project is now closed and bookworm bot is no longer supported.**
+**This project is now closed and quizquetzel bot is no longer supported.**
 
 ## Authors & Contributors
 
