@@ -11,11 +11,11 @@
   <a href="https://img.shields.io/badge/version-1.0.0-blue">
     <img src="https://img.shields.io/badge/version-1.0.0-blue" alt="Version">
   </a>
-  <a href"=https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIqrahaq%2FBookWorm%2F">
-    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIqrahaq%2FBookWorm%2F" alt="Hits">
+  <a href"=https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIqrahaq%2FQuizQuetzal%2F">
+    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIqrahaq%2FQuizQuetzal%2F" alt="Hits">
    </a>
-  <a href="https://img.shields.io/github/license/Iqrahaq/BookWorm">
-    <img src="https://img.shields.io/github/license/Iqrahaq/BookWorm" alt="License">
+  <a href="https://img.shields.io/github/license/Iqrahaq/QuizQuetzal">
+    <img src="https://img.shields.io/github/license/Iqrahaq/QuizQuetzal" alt="License">
   </a>
 </p>
 
