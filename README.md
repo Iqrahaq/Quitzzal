@@ -21,51 +21,11 @@
 
 
 
-<p align="center">CURRENTLY A WORK IN PROGRESS! BookWorm Bot is a discord bot that has been designed to streamline book club activities within servers.</p>
+<p align="center">QuizQuetzel Bot is a discord bot that has been designed to perform quiz activities within servers.</p>
 
-## Getting Started
+## Current Status
 
-**Currently you'll need to self-host this bot as hosting costs aren't feasible.**
-
-See [setup guide - setup.md](setup.md) for guidance on setting this bot up for self-hosting.
-
-## Usage, Commands & Features
-
-**Command Prefix = "bw!"**
-
-**bw!ping** - Returns my response time in milliseconds.
-
-**bw!info** - Returns information about me.
-
-**bw!botsetup** - If I'm new, use this command to create the required role and entries in my system.
-
-**bw!bookworms** - Lists the current book club members and their book club information.
-
-**bw!topfive** - Lists the top 5 book worms (book club members).
-
-**bw!pickaworm** - Picks a random bookworm (book club member).
-
-**bw!profile** - Returns your book club profile.
-
-**bw!booksearch** - Search for a book (Limited to 10 results per search).
-
-**bw!setbook** - Search for a book (Limited to 10 results per search) and set it as the current book club's read.
-
-**bw!currentbook** - Check to see what the current set book is for book club.
-
-**bw!bookfinished** - Let BookWorm Bot know that you've finished the current set book for book club.
-
-**bw!mybooks** - Returns a list of all the books you've read.
-
-**bw!allbooks** - Returns a list of all the books that have been read in the club.
-
-**bw!quote** - Returns an inspirational quote.
-
-## Future Implementations
-
-**Paginating bw!bookworms list** - Not all the bookworms show, so the fix for that at the moment is bw!profile. The plan is to hopefully paginate bw!bookworms to show the full list.
-
-**Docker Image** - A docker image for simple and easy deployment should exist.
+**This project is now closed and bookworm bot is no longer supported.**
 
 ## Authors & Contributors
 
